@@ -18,12 +18,6 @@
   </head>
   <body></body>
   <script>
-    /*
-      TO DO
-      [x] check if the plugins are all loaded
-      [ ] delete extra plugins
-      [ ] test run in browser
-    */
 
     // SCENARIOS TEXT
     // e.g. C2 indicates High-Cost version of Scenario 2
@@ -359,7 +353,7 @@
         type: jsPsychSurveyText,
         preamble: `Please recall a recent occasion in which you personally received help from someone else and write 3-4 sentences about that event. Please describe the situation as well as when it occurred. Take a first-person perspective (e.g. “I received help ... ”) and explain so that somebody who was not there could appreciate what the other person did to help you and why.`,
         questions: [
-          {prompt: 'Write your answer below:', rows: 5}
+          {prompt: 'Write your answer below:', rows: 5, required: true}
         ],
         data: {
           task: "write-in"
